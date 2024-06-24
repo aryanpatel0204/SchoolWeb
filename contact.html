@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLWEB</title>
+    <style>
+        li{
+            float: left;
+        }
+        li a,.dropbutton{
+            display: inline-block;
+            padding: 14px 16px;
+            text-align: center;
+            color: green;
+            text-decoration: none;
+        }
+        .nav{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+            background-color: #38444d;
+            width: 100%;
+        }
+        .nav li{
+            display:inline-block;
+            font-size: 25px;
+            padding: 10px;
+            color: azure;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a{
+            color: black;
+            background-color: #f9f9f9;
+            display: block;
+            text-align: left;
+            padding: 12px 16px;
+        }
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        /* For Contact */
+        .contact{
+            width: 94%;
+            color: white;
+            background-color: #38444d;
+            font-size: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .p1tag{
+            margin: 20px;
+            float: left;
+            color: gray;
+        }
+        .ptag{
+            float: left;
+            color: gray;
+        }
+        .p2tag{
+            padding-right: 200px;
+            margin-right: 50px;
+            color: gray;
+            float: right;
+        }
+        .register{
+            width: 95%;
+            color: white;
+            background-color: #38444d;
+            font-size: 20px;
+            padding: 20px;
+            margin-right:30px;
+            margin: 20px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="home.html"><img src="schllogo.png" height="80px" width="80px" alt="No Img"></a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="img_gal.html">Gallery</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbutton">About School</a>
+            <div class="dropdown-content">
+                <a href="#">About Trust</a>
+                <a href="#">About School</a>
+                <a href="#">Facilities</a>
+                <a href="#">Our Mission & Vision</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbutton">Admission</a>
+            <div class="dropdown-content">
+                <a href="#">Admission Procedure</a>
+                <a href="#">Fee Structure(Changes Every year)</a>
+                <a href="#">Circular</a>
+                <a href="#">School Bank Details</a>
+            </div>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <div class="contact">Hogward School, Ahmedabad</div>
+    
+    <p class="p1tag">Address </p>
+    <p class="ptag"> ASIA Campus Dr. John Geevargese Marg,<br>
+                     Drive In Rd, near Himalaya Mall,<br>
+                     Thaltej, Ahmedabad, Gujarat 380054<br>
+                     Phone: +91 (079) 2685 6446, 2685 6447, 2685 6449</p>
+    <p class="p2tag">Visting Hours (by Prior Appointment)<br>
+                    <b>11:00 a.m. to 12:00 noon on working days</b></p><br>
+    <div class="register">ALUMNI REGISTRATION</div>
+</body>
+</html>

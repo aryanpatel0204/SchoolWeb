@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCHLWEB</title>
+    <style>
+        li{
+            float: left;
+        }
+        li a,.dropbutton{
+            display: inline-block;
+            padding: 14px 16px;
+            text-align: center;
+            color: green;
+            text-decoration: none;
+        }
+        .nav{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+            background-color: #38444d;
+            width: 100%;
+        }
+        .nav li{
+            display:inline-block;
+            font-size: 25px;
+            padding: 10px;
+            color: azure;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown-content a{
+            color: black;
+            background-color: #f9f9f9;
+            display: block;
+            text-align: left;
+            padding: 12px 16px;
+        }
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        /* For Accordian */
+        .myFa{
+            background-color: cadetblue;
+            padding: 10px;
+        }
+        .accordian{
+            background-color: #eee;
+            color: #444;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc; 
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+        /* For My Faqs */
+        *{
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 100%;
+            margin: auto;
+        }
+
+        
+        .faqItems{
+            border: 1px saddlebrown solid;
+            margin: 10px 0px;
+        }
+        .faqItems h2{
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            padding: 15px ;
+            cursor: pointer;
+            position: relative;
+        }
+        .question span{
+            position: absolute;
+            right: 10px;
+            font-size: 25px;
+        }
+        .faqAns{
+            font-size: 18px;
+            padding: 0px;
+            transition: 0.3s;
+            height: 0px;
+            transform-origin: top;
+            transform: scaleY(0);
+        }
+
+
+        .showAns{
+            height: auto;
+            padding: 15px;
+            transform: scaleY(1);
+        }
+        .faq{
+            width: 100%;
+            background-color: lightskyblue;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="home.html"><img src="schllogo.png" height="80px" width="80px" alt="No Img"></a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="img_gal.html">Gallery</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbutton">About School</a>
+            <div class="dropdown-content">
+                <a href="#">About Trust</a>
+                <a href="#">About School</a>
+                <a href="#">Facilities</a>
+                <a href="#">Our Mission & Vision</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbutton">Admission</a>
+            <div class="dropdown-content">
+                <a href="#">Admission Procedure</a>
+                <a href="#">Fee Structure(Changes Every year)</a>
+                <a href="#">Circular</a>
+                <a href="#">School Bank Details</a>
+            </div>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <div class="faq">
+        A. General Query About School.
+    </div>
+    <div class="main">
+      
+        <div class="faqInner">
+            <div class="faqItems">
+                <h2 class="question">
+                    1. Which Board Is The School Affilated To?  <span>▼</span>
+             </h2>
+                <div class="faqAns">School is affiliated to the Central Board of Secondary Education, New Delhi.</div>
+            </div>
+            <div class="faqItems">
+                <h2 class="question">2. When Does The Admission Process Begins?
+                    <span>▼</span>
+
+                </h2>
+                <div class="faqAns">Applications for admission are accepted only online. Please visit this link to fill in the enquiry form and the Admission Office will get in touch with you when admissions open. Please share the latest phone number and email ID for better communication.</div>
+            </div>
+            <div class="faqItems">
+                <h2 class="question">3. Is There Any Enterance Test For A Kid Seeking Admission?
+
+                    <span>▼</span>
+                </h2>
+                <div class="faqAns">The most detailed and well-structured set of interview questions on JavaScript for Freshers and experienced professionals in the field of web development.Well-curated basic to advanced interview questions on SEO, categorized into freshers and experienced professionals. Also, find tips to fast-track a career in SEO.</div>
+            </div>
+            <div class="faqItems">
+                <h2 class="question">4. Does School Provide Transportation?
+                    <span>▼</span>
+
+                </h2>
+                <div class="faqAns">The school does not provide any transportation facility. The school does not have buses or vans to transport students to and from the school. It is the responsibility of the parents or guardians to arrange for the  transportation for their children.</div>
+            </div>
+            <div class="faqItems">
+                <h2 class="question">5. Does School Provide Meals?
+                    <span>▼</span>
+
+                </h2>
+                <div class="faqAns">The school provides three meals to learners in Nursery to Senior Kindergarten. This service is optional and  can be availed against a charge, payable quarterly.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var allQuestion=document.querySelectorAll(".question"); //Node List | Aarray
+   
+
+   allQuestion.forEach((element,i)=>{//Loop
+       element.addEventListener("click",()=>{ //Click
+
+           allQuestion.forEach((innerEl,index)=>{
+               if(index!=i){
+                   innerEl.nextElementSibling.classList.remove('showAns')
+                   innerEl.children[0].innerHTML="▼"
+               }
+           })
+           // var n=["faqAns","showAns"]
+
+           if(element.nextElementSibling.className=="faqAns showAns"){//Ans
+               element.children[0].innerHTML="▼" //
+           }
+           else{
+               element.children[0].innerHTML="▲"
+           }
+           
+           element.nextElementSibling.classList.toggle('showAns') //Current Element
+           
+          
+       })
+
+   })
+</script>
+</html>
